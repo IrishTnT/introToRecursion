@@ -35,14 +35,14 @@ def fact(x):
 
 #Question 2
 def count(xs):
-    if len(xs) == 1:
+    if tail(xs) == []:
         return 1
 
     return 1 + count(tail(xs))
 
 #Question 3
 def sumList(xs):
-    if len(xs) == 1:
+    if tail(xs) == []:
         return head(xs)
     
     return head(xs) + sumList(tail(xs))
